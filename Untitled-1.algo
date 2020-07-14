@@ -1,0 +1,19 @@
+
+
+  binarytree:	STRUCT
+          
+          root,* right, * left :Node ;
+                 
+  END_STRUCT   
+
+            
+
+   FUNCTION countNode(Node root){
+
+       
+        if(root==null)
+            return 0;
+
+        
+        return 1 + countNode(root.left) + countNode(root.right);
+    }                         
